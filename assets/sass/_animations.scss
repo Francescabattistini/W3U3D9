@@ -1,0 +1,18 @@
+@mixin fade-in($duration, $start-point, $end-point, $delay, $name) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-delay: $delay;
+    animation-fill-mode: both;
+    transition: all;
+  
+    @keyframes #{$name} {
+      0% {
+        opacity: 0;
+        translate: 0 $start-point;
+      }
+      100% {
+        opacity: 1;
+        translate: 0 $end-point;
+      }
+    }
+  }

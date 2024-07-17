@@ -1,0 +1,11 @@
+@use "sass:list";
+@import "colors";
+
+$btn-name: "blue", "orange", "green";
+
+@for $i from 1 through length($button-colors) {
+  .#{list.nth($btn-name, $i)}-btn {
+    background-color: #{list.nth($button-colors, $i)};
+    border-radius: 5px;
+  }
+}

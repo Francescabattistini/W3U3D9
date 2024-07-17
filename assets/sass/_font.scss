@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap");
+
+$basic-text-family: "roboto", sans-serif;
+$basic-text-weight: 400;
+$basic-text-style: normal;
+
+$header-font-family: "Rubik Mono One", monospace;
+$header-font-weight: 400;
+$header-font-style: normal;
+
+@mixin title-big($fm: "Rubik Mono One", $fw: 400, $fs: normal) {
+  font-family: $fm;
+  font-weight: $fw;
+  font-style: $fs;
+}
+
+@mixin basic-text($fm: "roboto", $fw: 400, $fs: normal) {
+  font-family: $fm;
+  font-weight: $fw;
+  font-style: $fs;
+  font-size: 1em;
+}

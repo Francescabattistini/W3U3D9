@@ -1,0 +1,23 @@
+@use "sass:list";
+$sizes: (
+  sm: 1em,
+  normal: 2em,
+  md: 3em,
+  lg: 4em,
+  xl: 5em,
+  xxl: 6em,
+);
+$sizes-name: "sm", "normal", "md", "lg", "xl", "xxl";
+$direction-list: "block", "inline";
+
+@each $direction in $direction-list {
+  @each $size, $value in $sizes {
+    .padding-#{$direction}-#{$size} {
+      padding-#{$direction}: #{$value};
+    }
+
+    .margin-#{$direction}-#{$size} {
+      margin-#{$direction}: #{$value};
+    }
+  }
+}

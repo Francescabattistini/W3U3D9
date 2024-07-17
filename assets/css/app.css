@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap");
+.padding-block-sm {
+  padding-block: 1em;
+}
+
+.margin-block-sm {
+  margin-block: 1em;
+}
+
+.padding-block-normal {
+  padding-block: 2em;
+}
+
+.margin-block-normal {
+  margin-block: 2em;
+}
+
+.padding-block-md {
+  padding-block: 3em;
+}
+
+.margin-block-md {
+  margin-block: 3em;
+}
+
+.padding-block-lg {
+  padding-block: 4em;
+}
+
+.margin-block-lg {
+  margin-block: 4em;
+}
+
+.padding-block-xl {
+  padding-block: 5em;
+}
+
+.margin-block-xl {
+  margin-block: 5em;
+}
+
+.padding-block-xxl {
+  padding-block: 6em;
+}
+
+.margin-block-xxl {
+  margin-block: 6em;
+}
+
+.padding-inline-sm {
+  padding-inline: 1em;
+}
+
+.margin-inline-sm {
+  margin-inline: 1em;
+}
+
+.padding-inline-normal {
+  padding-inline: 2em;
+}
+
+.margin-inline-normal {
+  margin-inline: 2em;
+}
+
+.padding-inline-md {
+  padding-inline: 3em;
+}
+
+.margin-inline-md {
+  margin-inline: 3em;
+}
+
+.padding-inline-lg {
+  padding-inline: 4em;
+}
+
+.margin-inline-lg {
+  margin-inline: 4em;
+}
+
+.padding-inline-xl {
+  padding-inline: 5em;
+}
+
+.margin-inline-xl {
+  margin-inline: 5em;
+}
+
+.padding-inline-xxl {
+  padding-inline: 6em;
+}
+
+.margin-inline-xxl {
+  margin-inline: 6em;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.blue-btn {
+  background-color: #0e6cff;
+  border-radius: 5px;
+}
+
+.orange-btn {
+  background-color: #ff8700;
+  border-radius: 5px;
+}
+
+.green-btn {
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+body {
+  color: #f4f4f4;
+}
+body header {
+  font-family: "roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+}
+body header nav {
+  justify-content: space-between;
+  background-color: #000000;
+  align-items: center;
+}
+body header nav .logo {
+  width: 100px;
+}
+body header nav .logo svg {
+  fill: red;
+}
+body header nav #links {
+  gap: 1em;
+}
+body header nav #links a {
+  cursor: pointer;
+}
+body header #hero {
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  background-color: #640fe5;
+}
+body header #hero #hero-text {
+  width: 50vw;
+}
+body header #hero #hero-text h1 {
+  animation-name: fade-in1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  transition: all;
+  font-family: "Rubik Mono One";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+}
+@keyframes fade-in1 {
+  0% {
+    opacity: 0;
+    translate: 0 -50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+body header #hero #hero-text p {
+  animation-name: fade-in2;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  transition: all;
+  width: 300px;
+}
+@keyframes fade-in2 {
+  0% {
+    opacity: 0;
+    translate: 0 -50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+body header #hero #hero-text #hero-buttons {
+  animation-name: fade-in3;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  transition: all;
+}
+@keyframes fade-in3 {
+  0% {
+    opacity: 0;
+    translate: 0 -50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+body header #hero #hero-text #hero-buttons button {
+  padding: 0.5em;
+  cursor: pointer;
+}
+body header #hero #hero-img img {
+  animation-name: fade-in4;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+  transition: all;
+  border-radius: 5px;
+  box-shadow: 0px 5px 22px 1px rgba(0, 0, 0, 0.39);
+  border: 1px solid black;
+  width: 50vw;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@keyframes fade-in4 {
+  0% {
+    opacity: 0;
+    translate: 0 -50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0px;
+  }
+}
+body main section {
+  display: flex;
+  align-items: center;
+  row-gap: 1em;
+  flex-wrap: wrap;
+}
+body main section > div {
+  padding: 1em;
+  width: 25%;
+}
+body main section div img {
+  border-radius: 5px;
+  box-shadow: 0px 5px 22px 1px rgba(0, 0, 0, 0.72);
+  border: none;
+  width: 100%;
+} /*# sourceMappingURL=app.css.map */
